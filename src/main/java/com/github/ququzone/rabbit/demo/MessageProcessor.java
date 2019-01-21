@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class MessageProcessor {
-    public void process(String message) {
-        System.out.println("receive message:" + message);
+    public void process(byte[] message) {
+        System.out.println("receive message:" + new String(message));
     }
 }
